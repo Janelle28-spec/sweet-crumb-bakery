@@ -1,0 +1,142 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    color: black;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: mediumseagreen;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: darkslategray;
+    border-radius: 5px;
+}
+
+/* Header (Hero) Section */
+header {
+    background-color: gold;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 24px;
+}
+
+/* Service Highlights */
+#services {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+#services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    margin: 20px 0;
+}
+
+.service-item h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Contact Form Styling */
+#contact {
+    padding: 40px 20px;
+    background-color: white;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact input, #contact textarea {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#contact button {
+    background-color: mediumseagreen;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: darkslategray;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    .service-item {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
